@@ -1,4 +1,6 @@
-/* 1)
+/* <------------- Beginner------------------------------>
+
+1)
 
 let num = prompt("Enter your num:");
 num =Number();
@@ -34,16 +36,16 @@ else {
 }
 */
 
-/* 4)
+/*   4)
 let x = prompt("Enter a number:");
 x = Number(x);
 if (x > 0 ){
     console.log("Number is positive");
 }
-else if (x <= 0){
+else if (x < 0){
     console.log("Number is negative");
 }
-else if (x = 0){
+else if (x == 0){
     console.log("Number is zero");
 }
 else{
@@ -74,3 +76,74 @@ else{
     console.log("Invalid num!")
 }
 */
+
+/* <-------------------------Intermediate----------------------->*/
+/*  1)
+let year = prompt ("Enter year:");
+year = Number(year);
+if ((year % 4 == 0 && year % 100 != 0)||(year % 4 == 400)){
+    console.log(year + "it is leap year.");
+}
+else{
+    console.log(year + "it is not leap year.");
+}
+*/
+
+
+/*    2)
+const correctuserName = "sakshi";
+const correctpassword = "sakshi@123";
+let UserName = prompt("Enter UserName:");
+UserName = (UserName);
+let password = prompt("Enter password:");
+password = (password);
+if( UserName ==  correctuserName && password ==  correctpassword){
+    console.log("Login successful");
+}
+else{
+    console.log("Access denied.");
+}
+*/
+
+
+/*   3)
+let input = prompt("Enter a number:");
+input = (input);
+if (input > 10 && input < 50){
+    console.log("great!")
+}
+else{
+    console.log("Invalid!")
+}
+*/
+
+
+/* 4)
+let input = prompt("Enter a number:");
+input = (input);
+if (input % 3 == 0 && input % 5 == 0){
+    console.log(input + "is divisible by 3 & 5");
+}
+else{
+    console.log(input + "is not divisible by 3 & 5");
+}
+*/
+
+
+/* 5)
+let maths = prompt("Enter your maths marks:");
+maths = Number();
+let English = prompt ("Enter your English marks:");
+English = Number();
+let Marathi = prompt("Enter your Marathi marks:");
+Marathi = Number();
+if (maths + English + Marathi >= 40){
+    console.log("passed");
+}
+else{
+    console.log("Fail");
+}
+*/
+
+/* <----------------------Challenge-------------------------------->*/
+
