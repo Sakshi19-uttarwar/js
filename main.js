@@ -1,250 +1,181 @@
-/* <------------- Beginner------------------------------>
-
-1)
-
-let num = prompt("Enter your num:");
-num =Number();
-if (num % 2 == 0){
-    console.log("Even number");
-}
-else{
-    console.log("Odd number");
+// 1. Print numbers 1 to 10 using a for loop.
+/*for(let i=1; i<= 10; i++){
+    console.log(i);
 }
 */
 
-/* 2)
-let age = prompt("Enter your age:");
-age = Number();
-if (age <= 18){
-    console.log("You are an adult.");
+//2. Print even numbers between 1 to 20.
+/*for (let i=1; i<= 20; i++){
+    if(i%2 === 0){
+        console.log(i);
+    }    
 }
-else{
-    console.log( "You are a minor.");
-}
-*/
+    */
 
 
-/* 3)
-let a = prompt("Enter number a:");
-let b = prompt("Enter number b:");
-num = Number();
-if (a>b){
-    console.log("a is greater than b");
-}
-else {
-    console.log("b is grater than a");
-}
-*/
-
-/*   4)
-let x = prompt("Enter a number:");
-x = Number(x);
-if (x > 0 ){
-    console.log("Number is positive");
-}
-else if (x < 0){
-    console.log("Number is negative");
-}
-else if (x == 0){
-    console.log("Number is zero");
-}
-else{
-    console.log("Inavlid num!");
+// 3. Print odd numbers between 1 to 20.
+/*for(let i=1; i<=20; i++){
+    if(i%2 !== 0){
+        console.log(i);
+    }
 }
 */
 
 
-/* 5)
-let score = prompt("Enter your score(0-100):");
-score = Number(score);
-if (score >= 90 && score <= 100){
-    console.log("A");
+// 4. Find the sum of numbers from 1 to 100.
+/*let sum = 0;
+for(i=1; i<= 100; i++){
+    sum = sum+i;
 }
-else if (score >= 80 && score <= 89){
-    console.log("B");
-}
-else if (score >= 70 && score <= 79){
-    console.log("C");
-}
-else if(score >= 60 && score <= 69){
-    console.log("D");
-}
-else if(score < 60 && score >= 0){
-    console.log("F");
-}
-else{
-    console.log("Invalid num!")
+{
+    console.log(sum);
 }
 */
 
-/* <-------------------------Intermediate----------------------->*/
-/*  1)
-let year = prompt ("Enter year:");
-year = Number(year);
-if ((year % 4 == 0 && year % 100 != 0)||(year % 4 == 400)){
-    console.log(year + "it is leap year.");
+// 5. Print the multiplication table of any number (e.g., 5).
+/*for(i=1; i<=50; i++){
+    if(i % 5==0){
+        console.log(i);
+    }
 }
-else{
-    console.log(year + "it is not leap year.");
+*/
+
+//6. Ask the user for a number and print all numbers up to that number.
+/*let num= prompt("Enter a num:");
+for(i=1; i<= num; i++){
+    console.log(i);
 }
 */
 
 
-/*    2)
-const correctuserName = "sakshi";
-const correctpassword = "sakshi@123";
-let UserName = prompt("Enter UserName:");
-UserName = (UserName);
-let password = prompt("Enter password:");
-password = (password);
-if( UserName ==  correctuserName && password ==  correctpassword){
-    console.log("Login successful");
+// 7. Print squares of numbers from 1 to 10.
+/*for(i=1; i<= 10; i++){
+      console.log(i*i);
 }
-else{
-    console.log("Access denied.");
+*/
+
+// 8. Count backward from 10 to 1.
+/*for(i=10; i>=1; i--){
+    console.log(i);
 }
 */
 
 
-/*   3)
-let input = prompt("Enter a number:");
-input = (input);
-if (input > 10 && input < 50){
-    console.log("great!")
-}
-else{
-    console.log("Invalid!")
+//9. Print all numbers divisible by 3 from 1 to 50.
+/*for(i=1; i<=50; i++){
+    if(i%3==0){
+        console.log(i);
+    }
 }
 */
 
 
-/* 4)
-let input = prompt("Enter a number:");
-input = (input);
-if (input % 3 == 0 && input % 5 == 0){
-    console.log(input + "is divisible by 3 & 5");
+// 10. Print sum of even and odd numbers separately from 1 to 50.
+/*let evenSum =0;
+let oddSum = 0;
+for(i=1; i<=50; i++){
+    if(i%2 ==0){
+        evenSum += i;
+    }else{
+        oddSum += i;
+    }
 }
-else{
-    console.log(input + "is not divisible by 3 & 5");
+console.log("even:", evenSum);
+console.log("odd", oddSum);
+*/
+
+
+// 11. Calculate factorial of a number (e.g., 5! = 120).
+/*let num = 6;;
+let fact =1;
+for(i=1; i<=num; i++){
+    fact = fact*i;
+}
+console.log(fact);
+*/
+
+
+// 12. Print star pattern
+// *
+// **
+// ***
+// ****
+// *****
+
+/*for(i=5; i>=1; i--){
+    let pattern ="";
+    for (j=1; j<=i; j++){
+        pattern += "*";
+    }
+    console.log(pattern);
 }
 */
 
 
-/* 5)
-let maths = prompt("Enter your maths marks:");
-maths = Number();
-let English = prompt ("Enter your English marks:");
-English = Number();
-let Marathi = prompt("Enter your Marathi marks:");
-Marathi = Number();
-if (maths + English + Marathi >= 40){
-    console.log("passed");
-}
-else{
-    console.log("Fail");
+// 13. Reverse star pattern
+// *****
+// ****
+// ***
+// **
+// *
+
+/*
+for(i=1; i<=5; i++){
+    let pattern ="";
+    for(j=1; j<=i; j++){
+        pattern += "*";
+    }
+    console.log(pattern);
 }
 */
 
-/* <----------------------Challenge-------------------------------->*/
+// 14. Number pattern (increasing)
+// 1
+// 12
+// 123
+// 1234
+// 12345
 
-/*1.
-let input3 = prompt("Enter input1:");
-let input4 = prompt("Enter input2:");
-let operator = prompt("Enter operator:");
-if(operator == '+'){
-    console.log( "sum:", input3 + input4);
-}
-else if (operator == '-'){
-    console.log( "subtraction:", input3 - input4);
-}
-else if (operator == '/'){
-    console.log( "division:", input3 / input4);
-}
-else if (operator == '*'){
-    console.log( "multiplication:", input3 * input4);
-}
-else{
-    console.log("Choose the correct operator between ('+', '-' , '*', '/') ");
-}
-*/
-
-/*2.
-let trafficLightColor = prompt("Enter the traffic light color:");
-trafficLightColor = trafficLightColor.toLowerCase();
-if(trafficLightColor === "red"){
-    console.log("Stop");
-}
-else if(trafficLightColor === "yellow"){
-    console.log("Get Ready");
-}
-else if(trafficLightColor === "green"){
-    console.log("Go");
-}
-else{
-    console.log("Invalid input!");
-}
-*/
-
-/* 3.
-let a = prompt("Enter a side of triangle:");
-let b = prompt("Enter b side of triangle:");
-let c = prompt("Enter c side of triangle:");
-if(a === b && b === c){
-    console.log("Equilateral Triangle");
-}
-else if(a === b || b === c || a === c){
-    console.log("Isosceles Triangle");
-}
-else{
-    console.log("Scalene Triangle");
-}
-*/
-
-/* 4.
-let day = 4;
-switch(day){
-    case 1:
-        console.log("Monday");
-        break;
-    case 2:
-        console.log("Tuesday");
-        break;
-    case 3:
-        console.log("Wednesday");
-        break;
-    case 4:
-        console.log("Thursday");
-        break;
-    case 5:
-        console.log("Friday");
-        break;
-    case 6:
-        console.log("Saturday");
-        break;
-    case 7:
-        console.log("Sunday");
-        break;
-    default :
-        console.log("Invalid day Number");
+/*for(i=1; i<=5; i++){
+    let pattern = "";
+    for (j=1; j<=i; j++){
+        pattern += j;
+    }
+    console.log(pattern);
 }
 */
 
 
-let temp = prompt("Enter temperature in celcius:");
-if(temp < 0){
-    console.log("Freezing");
+// 15. Number pattern (decreasing)
+// 12345
+// 1234
+// 123
+// 12
+// 1
+
+/*for(i=5; i>=1; i--){
+    let pattern = "";
+    for(j=1; j<=i; j++){
+        pattern += j;
+    }
+    console.log(pattern);
 }
-else if(temp >= 0 && temp <=15){
-    console.log("Cold");
-}
-else if(temp >=16 && temp <= 25){
-    console.log("Cool");
-}
-else if(temp >25){
-    console.log("Warm");
-}
-else{
-    console.log("Invalid!");
-}
+*/
 
 
+
+// 16. Pattern
+// 1
+// 22
+// 333
+// 4444
+// 55555
+
+/*for(i=1; i<=5; i++){
+    let pattern= "";
+    for(j=1; j<=i; j++){
+        pattern += i;
+    }
+    console.log(pattern);
+}
+*/
