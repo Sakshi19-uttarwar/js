@@ -1,282 +1,224 @@
-
-/*
-// 1. Even or Odd
-// Check whether a given number is even or odd.
-
-let num = 4;
-if(num % 2 == 0){
-    console.log("Even Number");
-}
-else{
-    console.log("Odd Number");
-}
-
-// 2. Positive, Negative, or Zero
-// Take a number and print if it’s positive, negative, or zero.
-let number = 5;
-if(number >= 0){
-    console.log("Number is positive");
-}
-else{
-    console.log("Number is negative");
-}
-
-// 3. Maximum of Two Numbers
-//Input two numbers and display which one is larger.
-let input1 = 5;
-let input2 = 10;
-if(input1 > input2){
-    console.log("input1 is greater");
-}
-else{
-    console.log("input2 is greater");
-}
-
-// 4. Divisible by 5 or Not
-// Check if a number is divisible by 5.
-let num2 = 15;
-if(num2 % 5 == 0){
-    console.log("num2 is divisible by 5");
-}
-else{
-    console.log("num2 is not divisible by 5");
-}
-
-// 5. Leap Year Checker
-// Check whether a given year is a leap year or not.
-let year = 2025;
-if(year % 4 == 0){
-    console.log("leap year");
-}
-else{
-    console.log("Not a leap year");
-}
-
-//6. Character Type Checker
-// Input a character and check if it’s a vowel, consonant, number, or special symbol.
-let char = prompt("Enter a character:");
-if(char.length !== 1){
-    console.log("Please enter only one character.");
-}
-else if((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')){
-    let lowerChar = char.toLowerCase();
-    if(lowerChar === 'a' || lowerChar === 'e' || lowerChar === 'i' || lowerChar === 'o' || lowerChar === 'u'){
-        console.log("vowel");
-    }
-    else{
-        console.log("consonant");
-    }
-}
-else if (char >= '0' && char <= '9' ){
-    console.log("Digit");
-}
-else{
-    console.log("Special Symbol");
-}
-
-//7. Largest of Three Numbers
-// Compare three numbers and find the largest.
-let num4 = 34;
-let num5 = 67;
-let num6 = 89;
-const value = Math.max(num4,num5, num6);
-console.log(value);
+//Write a program to generate a random number between 1 and 10.
 
 
-// 8. Grade Calculator, Input marks and print grade: 90–100: A ,80–89: B ,70–79: C ,60–69: D ,Below 60: Fail
-let marks = 49;
-if(marks >= 90 && marks <= 100){
-    console.log("A grade");
-}
-else if (marks >= 80 && marks <= 89){
-    console.log("B grade");
-}
-else if(marks >= 70 && marks <= 79){
-    console.log("C grade");
-}
-else if(marks >= 60 && marks <= 69){
-    console.log("D grade");
-}else if (marks < 60){
-    console.log("Fail");
-}else{
-    console.log("Invaild number");
-}
 
-// 9. Check Voting Eligibility
-// Input age; if ≥ 18 → “You can vote”, else “You are a minor”.
-let age = 12;
-if(age >=18){
-    console.log("You can vote");
-}
-else{
-    console.log("You are a minor");
-}
+// Generate random number between 1 and 10
+// let randomNum = Math.floor(Math.random() * 10)+1 ;
 
-
-//10. Smallest of Three Numbers
-// Similar to “largest” but find the smallest.
-let num7 = 34;
-let num8 = 67;
-let num9 = 89;
-const value1 = Math.min(num7,num8, num9);
-console.log(value1);
-
-//Simple Calculator
-// Input two numbers and an operator (+, -, *, /) and perform the operation.
-let input3 = 2;
-let input4 = 5;
-let operator = prompt("Enter operator:");
-if(operator == '+'){
-    console.log( "sum:", input3 + input4);
-}
-else if (operator == '-'){
-    console.log( "subtraction:", input3 - input4);
-}
-else if (operator == '/'){
-    console.log( "division:", input3 / input4);
-}
-else if (operator == '*'){
-    console.log( "multiplication:", input3 * input4);
-}
-
-
-//12. Check Multiple Conditions
-// If a number is both even and greater than 10, print “Valid”, else “Invalid”.
-let num11 = 12;
-if(num11 % 2 == 0 && num11 > 10){
-    console.log("Valid")
-}else{
-    console.log("Invaild")
-}
-
-
-// 13. Day of the Week (Number to Text)
-// Input 1–7, and display the corresponding weekday.
-let day = 6;
-switch(day){
-    case 1:
-        console.log("Monday");
-        break;
-    case 2:
-        console.log("Tuesday");
-        break;
-    case 3:
-        console.log("Wednesday");
-        break;
-    case 4:
-        console.log("Thursday");
-        break;
-    case 5:
-        console.log("Friday");
-        break;
-    case 6:
-        console.log("saturday");
-        break;
-    case 7:
-        console.log("Sunday");
-        break;
-}
-
-
-// 14. find last digit of a given number is even or odd.
-let digit = 1237;
-let lastDigit = digit % 100;
-if(lastDigit % 2 == 0){
-    console.log("lastdigit of given number is even");
-}
-else{
-    console.log("lastDigit of given number is odd");
-}
-
-
-// 15. find last second digit of a given number is even or odd.
-let digit1 = 1234;
-let temp = Math.floor(digit1 / 10); 
-let secondLastDigit = temp % 10;
-if (secondLastDigit % 2 === 0) {
-    console.log("Second last digit of given number is even");
-} else {
-    console.log("Second last digit of given number is odd");
-}
-
-*/
+// console.log("Random number between 1 and 10 is: " + randomNum);
 
 
 
 
-// let num = 1;
-// do{
-//     console.log(num);
-//     num++
-// }while(num <=10);
-
-// let sum = 0;
-// for(i=1; i<=10; i++){
-//     sum= i+sum;
-// }{
-//     console.log(sum);
-// }
-
-
-// for(i=5;i>=1; i--){
-//     let pattern ="";
-//     for(j=1; j<=i; j++){
-//         pattern += "*";
-//     }
-//     console.log(pattern);
-// }
-// console.log("pattern");
-
-// // for(i=5; i>=1; i--){
-// //     let pattern ="";
-// //     for (j=1; j<=i; j++){
-// //         pattern += "*";
-// //     }
-// //     console.log(pattern);
-// // }
-
-// for(i=1; i<=5; i++){
-//     let pattern ="";
-//     for(j=1; j<=i; j++){
-//         pattern += "*";
-//     }
-//     console.log(pattern);
-// }
-
-
-// for(i=1; i<=5; i++){
-//     let pattern ="";
-//     for(j=1; j<=i; j++){
-//         pattern += j;
-//     }
-//     console.log(pattern);
-// }
-
-
-// for(i=1; i<=100; i++){
-//     if(i%3 == 0 && i%5 == 0){
-//         console.log("FizzBuzz");
-//     }else if(i%3 ==0){
-//         console.log("Fizz");
-//     }else if(i%5 ==0){
-//         console.log("Buzz");
-//     }else{
-//         console.log(i);
-//     }
-// }
-
-
-// Sum of first N natural numbers 
-// 👉 Take a number n and print the sum of all numbers from 1 to n. 
-// Example: n = 5 → Output: 15
-
-let num = 10;
-for(i=1; i<=num; i++){
-    num +=i;
-}
-console.log(i);
+//Take a number and find its square root using Math.sqrt().
+// let num = prompt("Enter a num:");
+//  let sum = Math.floor(Math.sqrt(num));
+// console.log(`the square root of ${num} is ${sum} `);
 
 
 
+// Find the maximum and minimum of three numbers
+//  using Math.max() and Math.min().
+// let num1 = prompt("Enter num1:");
+// let num2 = prompt("Enter num2:");
+// let num3 = prompt("Enter num3:");
+// let max = Math.max(num1, num2, num3);
+// let min = Math.min(num1,num2,num3)
+// console.log(` the maximum number among num1, num2, num3 is ${max}`);
+// console.log(` the minimum number among num1, num2, num3 is ${min}`);
 
 
+
+//Round a number to the nearest integer using Math.round().
+// let num = prompt("Enter a num:");
+// num = Math.round(num);
+// console.log(`The nearest number is ${num}`);
+
+
+//Round a number up and down using Math.ceil() and Math.floor().
+// let num = prompt("Enter a num:");
+// up = Math.ceil(num);
+// down = Math.floor(num);
+// console.log(`the round number up is ${up} & down is ${down}`);
+
+
+//Ask the user for their name and 
+// print it in uppercase using toUpperCase().
+// let user =prompt("Enter a user name: ");
+// let a = user.toUpperCase();
+// console.log(a);
+
+
+//Take a string and count how many characters it has using .length.
+// let string = prompt("Enter a string:");
+// let a = (string).length;
+// console.log(`The length of characters is ${a}`);
+
+
+//Extract the first 3 letters of a word using substring() or slice().
+// let word = prompt("Enter a word:");
+// let a= word.slice(3);
+// console.log(`The extracted three words are ${a}`);
+
+
+//Replace the word “bad” with “good” in a sentence using replace().
+// let a = prompt("Enter a sentence:");
+// b = a.replace("bad" ,"good");
+// console.log(b);
+
+
+//Join two strings
+//  like "Hello" and "World" using the concat() method or + operator.
+// let str1 = prompt("Enter str1:");
+// let str2 = prompt("Enter str2:");
+// let string = str1+" "+ str2;
+// console.log(`By adding str1 and str2 the strings becomes ${string}`);
+
+
+//Convert a string like "123" into a number using Number() or parseInt().
+// let str = prompt("Enter str:");
+// let a = Number(str);
+// console.log(`The string like "123" becomes number: ${str}`);
+
+
+//Check if "123abc" is a number using isNaN().
+// let num = "123abc";
+// let a = isNaN(num);
+// console.log(a);
+
+
+
+//Convert a number to a string using toString().
+// let num = prompt("Enter a num:");
+// let a = num.toString();
+// console.log(a);
+
+
+
+//Find the data type of a variable using typeof.
+// let a= prompt("Enter something");
+// let b= typeof(a);
+// console.log(b);
+
+
+//Convert a decimal number (e.g., 12.56) to an integer using parseInt().
+// let num = prompt("Enter a num:");
+// let a= parseInt(num);
+// console.log(a);
+
+
+//Generate a random 4-digit OTP.
+
+
+
+//Take a sentence and convert it to lowercase, then find its length.
+// let sen = prompt("Enter asentence:");
+// let a = sen.toLocaleLowerCase();
+// console.log(a); 
+
+
+//Ask the user for a floating number and print:
+// Its rounded value
+// Its square
+// Its cube root
+
+// let num = prompt("Enter a num:");
+// let  round = Math.floor(num);
+// let square = Math.sqrt(num);
+// let cube = Math.cbrt(num);
+// console.log(`The rounded value of given num is ${round}`);
+// console.log(`The square value of given num is ${square}`);
+// console.log(`The cube value of given num is ${cube}`);
+
+
+//Take a random number between 0 and 100, and check if it’s even or odd.
+let a = prompt("Enter a num:");
+let b = Math.random(a);
+console.log(`The random num of ${a} is ${b}`);
+
+
+
+
+// 1.Generate a random number between 50 and 100.
+
+//2. Find the square root, cube, and absolute value of a given number.
+
+// 3.Round 12.56 to:
+
+// nearest integer (Math.round())
+
+// next higher integer (Math.ceil())
+
+// next lower integer (Math.floor())
+
+// 4.Generate a random 4-digit OTP using Math.random().
+
+// 5.Find the power of a number using Math.pow(base, exponent).
+
+// 6.Find the absolute difference between two numbers using Math.abs().
+
+// 7.Write a program that prints the maximum and minimum of 5 user-entered numbers.
+
+// 8.Use Math.trunc() to remove the decimal part of a floating number.
+
+// ------------🔤 String Function Practice---------------
+
+// 9.Ask the user for a sentence and count how many characters it has using .length.
+
+// 10.Convert a string to lowercase and uppercase.
+
+// 11.Extract the first and last 3 characters from a string using .slice().
+
+// 12.Find the position of the word "JavaScript" in a sentence using .indexOf().
+
+//13. Replace all spaces in a sentence with a dash (-) using .replaceAll().
+
+// 14.Split a sentence into words using .split(" ").
+
+// 15.Join an array of words into one string using .join(" ").
+
+// 16.Check whether a string starts with "A" using .startsWith().
+
+// 17.Check whether a string ends with "." using .endsWith().
+
+// 18.Trim extra spaces from a string using .trim().
+
+// ------------🔣 Type Conversion & Checking----------------
+
+// 19.Convert "45.67" into:
+
+// a number (Number())
+
+// an integer (parseInt())
+
+// a float (parseFloat())
+
+// 20.Check if "123abc" is a number using isNaN().
+
+// 21.Convert a number to a string using .toString().
+
+// 22.Convert a boolean true to a string and print its type.
+
+// 23.Find the data type of multiple variables using typeof.
+
+// -----------🧮 Combined Logic + Built-in Function---------------
+
+// 24.Generate a random number between 1–100 and check if it’s even or odd.
+
+// 25.Ask the user for their full name → convert to uppercase → and display the total characters.
+
+// 26.Take a number from the user and print:
+
+// its square root
+
+// cube
+
+// and round it to 2 decimal places using .toFixed(2)
+
+// 27.Replace all vowels (a, e, i, o, u) in a string with *.
+
+// 28.Reverse a string using .split("").reverse().join("").
+
+// 29.Create a random password of 6 characters using Math.random() and string functions.
+
+// 30.Ask the user for a sentence and count how many times the word "the" appears using .match().
