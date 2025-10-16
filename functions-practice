@@ -1,0 +1,554 @@
+//Write a program to generate a random number between 1 and 10.
+
+
+
+// Generate random number between 1 and 10
+// let randomNum = Math.floor(Math.random() * 10)+1 ;
+
+// console.log("Random number between 1 and 10 is: " + randomNum);
+
+
+
+
+//Take a number and find its square root using Math.sqrt().
+// let num = prompt("Enter a num:");
+//  let sum = Math.floor(Math.sqrt(num));
+// console.log(`the square root of ${num} is ${sum} `);
+
+
+
+// Find the maximum and minimum of three numbers
+//  using Math.max() and Math.min().
+// let num1 = prompt("Enter num1:");
+// let num2 = prompt("Enter num2:");
+// let num3 = prompt("Enter num3:");
+// let max = Math.max(num1, num2, num3);
+// let min = Math.min(num1,num2,num3)
+// console.log(` the maximum number among num1, num2, num3 is ${max}`);
+// console.log(` the minimum number among num1, num2, num3 is ${min}`);
+
+
+
+//Round a number to the nearest integer using Math.round().
+// let num = prompt("Enter a num:");
+// num = Math.round(num);
+// console.log(`The nearest number is ${num}`);
+
+
+//Round a number up and down using Math.ceil() and Math.floor().
+// let num = prompt("Enter a num:");
+// up = Math.ceil(num);
+// down = Math.floor(num);
+// console.log(`the round number up is ${up} & down is ${down}`);
+
+
+//Ask the user for their name and 
+// print it in uppercase using toUpperCase().
+// let user =prompt("Enter a user name: ");
+// let a = user.toUpperCase();
+// console.log(a);
+
+
+//Take a string and count how many characters it has using .length.
+// let string = prompt("Enter a string:");
+// let a = (string).length;
+// console.log(`The length of characters is ${a}`);
+
+
+//Extract the first 3 letters of a word using substring() or slice().
+// let word = prompt("Enter a word:");
+// let a= word.slice(3);
+// console.log(`The extracted three words are ${a}`);
+
+
+//Replace the word “bad” with “good” in a sentence using replace().
+// let a = prompt("Enter a sentence:");
+// b = a.replace("bad" ,"good");
+// console.log(b);
+
+
+//Join two strings
+//  like "Hello" and "World" using the concat() method or + operator.
+// let str1 = prompt("Enter str1:");
+// let str2 = prompt("Enter str2:");
+// let string = str1+" "+ str2;
+// console.log(`By adding str1 and str2 the strings becomes ${string}`);
+
+
+//Convert a string like "123" into a number using Number() or parseInt().
+// let str = prompt("Enter str:");
+// let a = Number(str);
+// console.log(`The string like "123" becomes number: ${str}`);
+
+
+//Check if "123abc" is a number using isNaN().
+// let num = "123abc";
+// let a = isNaN(num);
+// console.log(a);
+
+
+
+//Convert a number to a string using toString().
+// let num = prompt("Enter a num:");
+// let a = num.toString();
+// console.log(a);
+
+
+
+//Find the data type of a variable using typeof.
+// let a= prompt("Enter something");
+// let b= typeof(a);
+// console.log(b);
+
+
+//Convert a decimal number (e.g., 12.56) to an integer using parseInt().
+// let num = prompt("Enter a num:");
+// let a= parseInt(num);
+// console.log(a);
+
+
+//Generate a random 4-digit OTP.
+
+
+
+//Take a sentence and convert it to lowercase, then find its length.
+// let sen = prompt("Enter asentence:");
+// let a = sen.toLocaleLowerCase();
+// console.log(a); 
+
+
+//Ask the user for a floating number and print:
+// Its rounded value
+// Its square
+// Its cube root
+
+// let num = prompt("Enter a num:");
+// let  round = Math.floor(num);
+// let square = Math.sqrt(num);
+// let cube = Math.cbrt(num);
+// console.log(`The rounded value of given num is ${round}`);
+// console.log(`The square value of given num is ${square}`);
+// console.log(`The cube value of given num is ${cube}`);
+
+
+//Take a random number between 0 and 100, and check if it’s even or odd.
+// let a =Math.floor(Math.random()*100)+1;
+// if(a%2 == 0){
+//     console.log(`The random num is ${a} & it is even`);
+// }else{
+//     console.log(`The random num is ${a} & it is odd`);
+// }
+
+
+
+
+
+// 1.Generate a random number between 50 and 100.
+
+//2. Find the square root, cube, and absolute value of a given number.
+
+// 3.Round 12.56 to:
+
+// nearest integer (Math.round())
+
+// next higher integer (Math.ceil())
+
+// next lower integer (Math.floor())
+
+// 4.Generate a random 4-digit OTP using Math.random().
+
+// 5.Find the power of a number using Math.pow(base, exponent).
+
+// 6.Find the absolute difference between two numbers using Math.abs().
+
+// 7.Write a program that prints the maximum and minimum of 5 user-entered numbers.
+
+// 8.Use Math.trunc() to remove the decimal part of a floating number.
+
+// ------------🔤 String Function Practice---------------
+
+// 9.Ask the user for a sentence and count how many characters it has using .length.
+
+// 10.Convert a string to lowercase and uppercase.
+
+// 11.Extract the first and last 3 characters from a string using .slice().
+
+// 12.Find the position of the word "JavaScript" in a sentence using .indexOf().
+
+//13. Replace all spaces in a sentence with a dash (-) using .replaceAll().
+
+// 14.Split a sentence into words using .split(" ").
+
+// 15.Join an array of words into one string using .join(" ").
+
+// 16.Check whether a string starts with "A" using .startsWith().
+
+// 17.Check whether a string ends with "." using .endsWith().
+
+// 18.Trim extra spaces from a string using .trim().
+
+// ------------🔣 Type Conversion & Checking----------------
+
+// 19.Convert "45.67" into:
+
+// a number (Number())
+
+// an integer (parseInt())
+
+// a float (parseFloat())
+
+// 20.Check if "123abc" is a number using isNaN().
+
+// 21.Convert a number to a string using .toString().
+
+// 22.Convert a boolean true to a string and print its type.
+
+// 23.Find the data type of multiple variables using typeof.
+
+// -----------🧮 Combined Logic + Built-in Function---------------
+
+// 24.Generate a random number between 1–100 and check if it’s even or odd.
+
+// 25.Ask the user for their full name → convert to uppercase → and display the total characters.
+
+// 26.Take a number from the user and print:
+
+// its square root
+
+// cube
+
+// and round it to 2 decimal places using .toFixed(2)
+
+// 27.Replace all vowels (a, e, i, o, u) in a string with *.
+
+// 28.Reverse a string using .split("").reverse().join("").
+
+// 29.Create a random password of 6 characters using Math.random() and string functions.
+
+// 30.Ask the user for a sentence and count how many times the word "the" appears using .match().
+
+//<----------------------USER-DEFINED FUNCTIONS------------------------->
+
+//1. Write a function greet() that prints "Hello, World!".
+// function greet(){
+//     console.log("Hello World");
+// }
+// greet();
+
+
+//2. Write a function displayName(name) 
+// that takes your name as a parameter and prints "Hello, <name>".
+// function displayName(name){
+//     console.log("Hello " + name);
+// }
+// displayName("Sakshi");
+
+
+//3. Write a function add(a, b) that returns the sum of two numbers.
+// function add(a,b){
+//     sum = a+b;
+//     console.log(`The sum of ${a} & ${b} is ` + sum);
+// }
+// add(1,2);
+
+
+//4. Write a function multiply(a, b) that returns the product of two numbers.
+// function multiply(a,b){
+//     multiply = a*b;
+//     console.log(`The multiply of ${a} & ${b} is ` + multiply);
+// }
+// multiply(3,2);
+
+
+//5.Write a function square(num) that returns the square of a number.
+// function squareOfNum(a){
+//     squareOfNum = a*a;
+//     console.log(`The square of ${a} num is ` + squareOfNum);
+// }
+// squareOfNum(6);
+
+
+
+//6.Write a function checkEvenOdd(num) 
+// that checks whether a number is even or odd.
+// function checkEvenOdd(num){
+//     if(num%2 == 0){
+//          console.log(`The ${num} is even`);
+//     }else{
+//          console.log(`The ${num} is odd`);
+//     } 
+// }
+// checkEvenOdd(15);
+
+
+//7. Write a function findLargest(a, b) 
+// that prints the largest of two numbers.
+// function findLargest(a,b){
+//     if(a>b){
+//         console.log(`${a} is greater than ${b}`);
+//     }else{
+//         console.log(`${b} is greater than ${a}`);
+//     }
+// }
+// findLargest(12, 88);
+
+
+//8. Write a function checkPositiveNegative(num) 
+// that prints whether a number is positive, negative, or zero.
+// function checkPositiveNegative(num){
+//     if(num==0){
+//         console.log(`The given num ${num} is zero`);
+//     }else if(num>0){
+//         console.log(`The given num ${num} is positive`);
+//     }else{
+//         console.log(`The given num ${num} is negative`);
+//     }
+// }
+// checkPositiveNegative(-5);
+
+
+//9.Write a function checkVote(age) that 
+// prints "Eligible to vote" if age ≥ 18, otherwise "Not eligible".
+// function checkVote(age){
+//     if(age> 18){
+//         console.log(`Eligible to vote`);
+//     }else{
+//         console.log(`Not Eligible`);
+//     }
+// }
+// checkVote(34);
+
+
+//10.Write a function checkLeapYear(year) that checks 
+// whether a given year is a leap year.
+// function checkLeapYear(year){
+//     if(year%4 === 0){
+//         console.log(`The given year ${year} is leap year`);
+//     }else{
+//         console.log(`The given year ${year} is not leap year`);
+//     }
+// }
+// checkLeapYear(2025);
+
+
+//11.Write a function printNumbers() that prints numbers from 1 to 10.
+// function printNumbers(){
+//     for(i=1; i<=10; i++){
+//         console.log(i);
+//     }
+// }
+// printNumbers();
+
+
+//12.Write a function sumOfNumbers(n) that 
+// returns the sum of all numbers from 1 to n.
+// function sumOfNumbers(n){
+//     let sum =0;
+//     for(i=1; i<=n; i++){
+//          sum = i+sum;
+//     }
+//     return sum;
+// }
+// console.log("sum=", sumOfNumbers(10));
+
+
+
+//13. Write a function factorial(n) that returns the factorial of a number.
+// function factorial(n){
+//     let fact = 1;
+//     for(i=1;i<=n; i++){
+//         fact = fact*i;
+//     }
+//     return fact;
+// }
+// console.log(`factorial=`, factorial(4));
+
+
+
+//14.Write a function printEvenNumbers(n) that prints even numbers from 1 to n.
+// function printEvenNumbers(n){
+//     for(i=1; i<=n; i++){
+//         if(i%2===0){
+//             console.log("even",i);
+//         }
+//     }
+// }
+// printEvenNumbers(10);
+
+
+
+//15.Write a function reverseNumber(num) that returns the reverse of a number.
+// function reverseNumber(num){
+//     let rev = 0;
+//     while(num>0){
+//         let digit = num%10;
+//         rev = rev*10+digit;
+//         num = Math.floor(num/10);
+//     }
+//     return rev;
+// }
+// console.log("Reversed number= ", reverseNumber(1234));
+
+
+//16.Write a function countCharacters(str) that prints
+//  how many characters are in a string.
+// function countCharacters(str){
+//     let count = str.length;
+//     console.log("Total characters =", count);
+// }
+// countCharacters("Sakshi");
+
+
+
+//17. Write a function convertToUpper(str) that returns the string in uppercase.
+// function convertToUpper(str){
+//     return str.toUpperCase();
+    
+// }
+// console.log(convertToUpper("sakshi"));
+
+
+
+//18.Write a function checkPalindrome(str) that checks whether a string is a palindrome.
+// function checkPalindrome(num){
+//     let copy = num;
+//     let rev = 0;
+//       while(num>0){
+//       let digit = num%10;
+//        rev = rev*10+digit;
+//       num = Math.floor(num/10);
+//       if(copy === rev){
+//           console.log("palindrome");
+//         }else{
+//           console.log("Not palindrome");
+//         }
+//     }
+// }
+// checkPalindrome(1224);
+
+
+// function checkPalindrome(str){
+//     str = str.toLowerCase().replace();
+//     let reversed = str.split("").reverse("").join();
+//     if(str == reversed){
+//         console.log("palindrome");
+//     }else{
+//         console.log("Not palindrome");
+//     }
+// }
+// checkPalindrome("madam");
+
+
+// 19. Write a function countVowels(str) that counts 
+// how many vowels are in a string.
+// function countVowels(str){
+//     let count = 0;
+//     str = str.toLowerCase();
+//     for(i=1; i<=str.length; i++){
+//         let ch = str[i];
+//         if(ch == 'a' || ch == 'e' || ch == 'i'|| ch == 'o'|| ch == 'u' ){
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
+// countVowels("sakshi");
+
+
+
+// 20. Write a function combineStrings(str1, str2) that joins two strings together.
+// function combineStrings(str1, str2){
+//     let a = str1+str2;
+//     console.log(`The combine strings of ${str1} & ${str2} is `, a);
+// }
+// combineStrings("good morning ", "sakshi");
+
+
+//21.Write a function sumOfDigits(num) 
+// that returns the sum of all digits of a number.
+// function sumOfDigits(num){
+//     let sum = 0;
+//     while(num>0){
+//       let digit = num%10;
+//       sum = sum + digit;
+//       num = Math.floor(num/10);
+//     }
+//     console.log(sum);
+// }
+// sumOfDigits(1234);
+
+
+
+//22. Write a function findGrade(marks) that prints grade based on marks:
+//≥90 → “A”
+//80–89 → “B”
+//70–79 → “C”
+//Below 70 → “Fail”
+
+// function findGrade(marks){
+//     if(marks>= 90){
+//         console.log(`The grade = A`);
+//     }else if (marks>=89 && marks <=80){
+//         console.log(`The grade = B`);
+//     }else if(marks>=79 && marks<70){
+//         console.log(`The grade = C`);
+//     }else{
+//         console.log(`The grade = D`)
+//     }
+// }
+// findGrade(93);
+// findGrade(43);
+
+
+//23.Write a function areaOfCircle(radius) that returns the area using πr².
+// function areaOfCircle(radius){
+//     let area = 3.14*radius*radius;
+//     console.log(`The area of circle is `, area);
+// }
+// areaOfCircle(2);
+
+
+//24. Write a function simpleInterest(p, r, t) that returns the simple interest.
+// function simpleInterest(p,r,t){
+//     let si = (p*r*t)/100;
+//     return si;
+// }
+// console.log(`Simple Interest = `, simpleInterest(1000,5,2));
+
+
+//25. 
+
+
+
+//26.Write a function that takes a number and prints whether it is a 
+// Krishnamurthy number (sum of factorial of digits = number).
+// function  prompt(num){
+//     let sum = 0;
+//     let a = num;
+//     while(a>0){
+//         let digit = a%10;
+    
+//       let fact = 1;
+//       for(i=1; i<=digit; i++){
+//          fact = fact *i;
+//         }
+//          sum = sum + fact;
+//         a = Math.floor(a/10);
+//         if(sum == num){
+//           console.log("Krishnamurthy");
+//         }else{
+//             console.log("Not krishnmurthy");
+//         }
+       
+//     }
+    
+// }
+// prompt(145);
+
+
+
+
+//27.Write a function that prints the Fibonacci series up to n terms.
+//Write a function that counts even and odd digits in a number.
+//Write a function that finds the smallest number divisible by all numbers from 1 to 10.
+//Write a function that prints a pattern using * (triangle, pyramid, etc.).
