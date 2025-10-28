@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Functions</title>
-    <script src="main.js"></script>
+    <title>Practice questions</title>
+     <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>Functions</h1>
+    <p id="box">Lorem ipsum dolor sit amet.</p>
+    <button onclick="fontIn()">Increase Font</button>
+    <button onclick="fontDe()">Decrease Font</button>
+
+    <script>
+        let size = 16;
+        const box = document.getElementById("box");
+        function fontIn(){
+            size += 2;
+            box.style.fontSize = size + "px";
+        }
+        function fontDe(){
+            size -= 2;
+            box.style.fontSize = size + "px";
+        }
+    </script>
 </body>
 </html>
