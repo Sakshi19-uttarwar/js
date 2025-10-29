@@ -7,21 +7,179 @@
      <script src="main.js" defer></script>
 </head>
 <body>
-    <p id="box">Lorem ipsum dolor sit amet.</p>
-    <button onclick="fontIn()">Increase Font</button>
-    <button onclick="fontDe()">Decrease Font</button>
+    <!-- 1. Change Text
+    Create a button that, when clicked, changes the text inside a <p> tag.
+    
+    <p id="text">Woww!</p>
+    <button onclick="changeText()">Click me to change text</button>
+
+    <script>
+        function changeText(){
+            const text = document.getElementById("text");
+            text.innerText = "You did it, Great!"
+        }
+    </script>
+    -->
+
+     <!-- 2.Change Color
+     Add a button that changes the text color of a paragraph when clicked
+    <p id="box">You want to change color, click button below</p>
+    <button onclick="changeColor()">Click to change color</button>
+    <script>
+        function changeColor(){
+            const box = document.getElementById("box");
+            box.style.color = box.style.color === "red" ? "blue": "red";
+        }
+    </script>
+    -->
+
+    <!-- 3.Toggle Visibility
+    Make a button that hides/shows a paragraph using the hidden attribute. 
+    <p id="toggle">You want to hide / show para , click button below</p>
+    <button onclick="hideShow()">click to hide</button>
+    <script>
+        function hideShow(){
+            const toggle = document.getElementById("toggle");
+            toggle.toggleAttribute("hidden");
+        }
+    </script>
+    -->
+
+   <!--4. Change Image
+    Add an <img> tag and a button.
+    When clicked, the button changes the image by updating the src attribute.
+    
+    <img id="text"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6J6kXLqa-P2tSr2I3IHn-b6ZKXuDKvw8p-Q&s"
+    alt="img">
+    <button onclick="changeImg()">click to change img</button>
+    <script>
+        function changeImg(){
+            const text = document.getElementById("text");
+            text.setAttribute("src" ,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOAzrK-eULyHOWzR671odzI4yTfRAFZMy1vQ&s")
+
+        }
+    </script>
+    -->
+
+    <!-- 5. Add List Item
+    Create a button that adds a new <li> item inside an existing <ul>.
+    <ul id="add">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <button onclick="addItem()">click to add Items</button>
+    <script>
+        function addItem(){
+            const add = document.getElementById("add");
+            const newItem = document.createElement("li");
+            newItem.innerText = "d";
+            add.appendChild(newItem);
+        }
+    </script>
+    -->
+
+   <!--6.Remove Last List Item
+   Make a button that removes the last <li> item from a list. 
+    <ul id="remo">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+    </ul>
+    <button onclick="removeEl()">click to remove item</button>
+    <script>
+        function removeEl(){
+            const remo = document.getElementById("remo");
+            remo.lastElementChild.remove();
+        }
+    </script>
+    -->
+
+    <!-- 7. Change Background
+    Add a button that changes the background color of the page.
+    
+    <p id="text">You want to change background, its do it.</p>
+    <button onclick="changeBg()">click me to change bg</button>
+    <script>
+        function changeBg(){
+            const text = document.getElementById("text");
+            document.body.style.backgroundColor = document.body.style.backgroundColor === "yellow"? "orange" : "yellow";
+        }
+    </script>
+    -->
+
+    <!-- 8. Display Current Time
+    Add a <p> and a button.
+    When clicked, display the current time in the paragraph.
+    
+    <p id="time">what's the time?</p>
+    <button onclick="currenttime()">click for current time</button>
+    <script>
+        function currenttime(){
+            const time = document.getElementById("time");
+            const a = new Date();
+           time.innerText = a.toLocaleTimeString();
+        }
+    </script>
+    -->
+
+    <!--9.Count Clicks
+    Create a button that counts how many times it has been clicked and displays the number. 
+    <p id="count">count how many times you clicked</p>
+    <button onclick="countTime()">click to count</button>
+    <script>
+        let clickCount = 0;
+        function countTime(){
+            clickCount++;
+            const count = document.getElementById("count");
+            count.innerText = `you clicked ${clickCount} times`;
+        }
+    </script>
+    -->
+
+
+    <!-- 10.Change Font Size
+    Add two buttons — Increase Font and Decrease Font.
+    When clicked, adjust the font size of a paragraph accordingly. 
+    
+    <p id="font">you want to increase / decrease font size, click below</p>
+    <button onclick="fontIn()">click to increase font size </button>
+    <button onclick="fontDe()">click to decrease font size </button>
 
     <script>
         let size = 16;
-        const box = document.getElementById("box");
         function fontIn(){
-            size += 2;
-            box.style.fontSize = size + "px";
+            size +=2;
+            const font = document.getElementById("font");
+            font.style.fontSize = size + "px";
         }
         function fontDe(){
-            size -= 2;
-            box.style.fontSize = size + "px";
+            size -=2;
+            const font = document.getElementById("font");
+            font.style.fontSize = size + "px";
         }
     </script>
+    -->
+
+
+    <!--11.Change Paragraph Style
+    Create a paragraph and a button.
+    When clicked, the paragraph’s font color, background, and font size should change.
+    
+    <p id="text">Lorem ipsum dolor sit amet.</p>
+    <button onclick="paraStyle()">click me</button>
+    <script>
+        let fontSize = 16;
+        function paraStyle(){
+            const text = document.getElementById("text");
+            text.style.color = "red";
+            text.style.background = "yellow";
+            text.style.fontSize = size +"px";
+        }
+    </script>
+    -->
+
+    
 </body>
 </html>
